@@ -1,4 +1,4 @@
-# tera-keyind-saver
+# tera-keybind-saver
 Makes the keybinds not randomly reset anymore
 
 
