@@ -1,6 +1,17 @@
-# tera-keybind-saver
-Makes the keybinds not randomly reset anymore
+# tera-keybind-saver 2.0 (not backwards compatible)
+
+No longer have keybinds/glyphs/item binds? randomly reset
+
+Commands:
+
+/8 keybind/key <filename> - This will copy the keybinds from one of your characters, you can find the filenames in tera-keybind-saver/data
 
 
-Note: Any errors that comes from this isn't my fault. That would be lack of opcode support, which should come soon™ so don't pm/dm me about it.
+Fixed bugs:
 
+Random resets
+
+
+Known bugs:
+
+If the keybinds reset, there's a chance a glyph page will get overwritten. (it will let you know in chat)
