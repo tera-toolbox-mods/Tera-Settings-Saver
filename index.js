@@ -5,7 +5,6 @@ function getJsonData(pathToFile) {
     try {
         return JSON.parse(fs.readFileSync(path.join(__dirname, pathToFile)));
     }catch(e) {
-        console.log(e);
         return undefined;
     }
 }
