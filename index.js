@@ -1,6 +1,10 @@
 const path = require('path');
 const fs = require('fs');
 
+if(!fs.existsSync('./data')) {
+    fs.mkdirSync('./data');
+}
+
 function getJsonData(pathToFile) {
     try {
         return JSON.parse(fs.readFileSync(path.join(__dirname, pathToFile)));
