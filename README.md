@@ -1,6 +1,6 @@
 ## Tera-Settings-Saver 2.0
 
-Tera settings saver is a module for Tera-Proxy which stops your settings from getting reset, aswell as it allows you to easily transfer settings between characters/servers/region. Also for those spicy Caali proxy users, it's auto update compatiable
+Tera settings saver is a module for Tera-Proxy which stops your settings from getting reset, aswell as it allows you to easily transfer settings between characters/servers/region. Also for those spicy Caali proxy users, it's auto update compatible
 
 ### How to use:
 Command | Usage | Arguments
