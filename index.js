@@ -1,8 +1,8 @@
 const path = require('path');
 const fs = require('fs');
 
-if(!fs.existsSync('./data')) {
-    fs.mkdirSync('./data');
+if(!fs.existsSync(path.join(__dirname, './data'))) {
+    fs.mkdirSync(path.join(__dirname, './data'));
 }
 
 function getJsonData(pathToFile) {
