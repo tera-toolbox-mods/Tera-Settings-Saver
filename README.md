@@ -1,17 +1,16 @@
-# tera-keybind-saver 2.0 (not backwards compatible)
+## Tera-Settings-Saver 2.0
 
-No longer have keybinds/glyphs/item binds? randomly reset
+Tera settings saver is a module for Tera-Proxy which stops your settings from getting reset, aswell as it allows you to easily transfer settings between characters/servers/region. Also for those spicy Caali proxy users, it's auto update compatiable
 
-Commands:
+### How to use:
+Command | Usage | Arguments
+--- | --- | ---
+key | Transfer settings from another character | File name
+keybinds | Transfer settings from another character | File name
+set | Transfer settings from another character | File name
+settings | Transfer settings from another character | File name
 
-/8 keybind/key <filename> - This will copy the keybinds from one of your characters, you can find the filenames in tera-keybind-saver/data
+#### File name(s) can be found by going to proxy/bin/node_modules/Tera-Settings-Saver/data
 
-
-Fixed bugs:
-
-Random resets
-
-
-Known bugs:
-
-If the keybinds reset, there's a chance a glyph page will get overwritten. (it will let you know in chat)
+### Bugs:
+Can potentially reset a glyph & item set page if the settings has been reset(it will print in the chat)

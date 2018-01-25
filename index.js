@@ -47,7 +47,7 @@ class KeybindSaver {
             saveJsonData(settingsPath, data);
             command.message(`Keybind transferred, relog to get them.`);
         }
-        command.add(['keybind', 'key'], cmdKeybind);
+        command.add(['keybinds', 'key', 'set', 'settings'], cmdKeybind);
 
         function sLoadClientSetting(key, opcode, payload, incoming, fake) {
             if(acceptServer > 0 && !fake) {
