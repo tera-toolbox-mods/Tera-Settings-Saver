@@ -38,14 +38,22 @@ class KeybindSaver {
                 command.message(`You need to include a file path(look in data folder)`);
                 return;
             }
-            let data = getJsonData(`./data/${arg}.json`);
-            if(!data) {
-                command.message(`Invalid file name`);
-                return;
-            }
 
+            let data;
+            if(arg.toLowerCase() === "lock") {
+                data = getJsonData(settingsPath);
+                if(!data.lock) data.lock = false;
+                data.lock = !data.lock;
+                command.message(`Keybind lock has been set to ${data.lock}.`);
+            }else {
+                data = getJsonData(`./data/${arg}.json`);
+                if(!data) {
+                    command.message(`Invalid file name`);
+                    return;
+                }
+                command.message(`Keybind transferred, relog to get them.`);
+            }
             saveJsonData(settingsPath, data);
-            command.message(`Keybind transferred, relog to get them.`);
         }
         command.add(['keybinds', 'key', 'set', 'settings'], cmdKeybind);
 
@@ -69,7 +77,9 @@ class KeybindSaver {
         
         function cSaveClientSetting(key, opcode, payload, incoming, fake) {
             if(acceptClient && !fake) {
-                saveJsonData(settingsPath, Object.assign({}, getJsonData(settingsPath) || {}, JSON.parse(`{ "${key}": ${JSON.stringify(getPacketInfo(payload))} }`)));
+                let data = getJsonData(settingsPath);
+                if(data.lock) return;
+                saveJsonData(settingsPath, Object.assign({}, data || {}, JSON.parse(`{ "${key}": ${JSON.stringify(getPacketInfo(payload))} }`)));
             }
         }
         dispatch.hook('C_SAVE_CLIENT_ACCOUNT_SETTING', 'raw', cSaveClientSetting.bind(null, 'accountSettings'));

@@ -5,10 +5,10 @@ Tera settings saver is a module for Tera-Proxy which stops your settings from ge
 ### How to use:
 Command | Usage | Arguments
 --- | --- | ---
-key | Transfer settings from another character | File name
-keybinds | Transfer settings from another character | File name
-set | Transfer settings from another character | File name
-settings | Transfer settings from another character | File name
+key | Transfer settings from another character / lock your keybinds | File name / lock
+keybinds | Transfer settings from another character / lock your keybinds | File name / lock
+set | Transfer settings from another character / lock your keybinds | File name / lock
+settings | Transfer settings from another character / lock your keybinds | File name / lock
 
 #### File name(s) can be found by going to proxy/bin/node_modules/Tera-Settings-Saver/data
 
