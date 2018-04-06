@@ -64,7 +64,7 @@ class KeybindSaver {
                 if(data && data[key]) {
                     let newPayload = Buffer.from(`${data[key].length}${getPacketInfo(payload).opcode}${data[key].payload}`, 'hex');
                     if(newPayload.toString() === payload.toString()) return true;
-                    setTimeout(()=> {command.message(`You're keybinds/settings were reset, fixing it. Note: One(or more) glyph page might be fucked`)}, 5000);
+                    setTimeout(()=> {command.message(`Your keybinds/settings were reset, fixing it. Note: One(or more) glyph page might be fucked`)}, 5000);
                     dispatch.toClient(newPayload);
                     return false;
                 }else{
