@@ -32,7 +32,7 @@ class KeybindSaver {
         let acceptServer = 0,
             acceptClient = false,
             settingsPath;
-        
+
         function cmdKeybind(arg) {
             if(!arg) {
                 command.message(`You need to include a file path(look in data folder)`);
@@ -74,7 +74,7 @@ class KeybindSaver {
         }
         dispatch.hook('S_LOAD_CLIENT_ACCOUNT_SETTING', 'raw', sLoadClientSetting.bind(null, 'accountSettings'));
         dispatch.hook('S_LOAD_CLIENT_USER_SETTING', 'raw', sLoadClientSetting.bind(null, 'userSettings'));
-        
+
         function cSaveClientSetting(key, opcode, payload, incoming, fake) {
             if(acceptClient && !fake) {
                 let data = getJsonData(settingsPath);
@@ -84,7 +84,7 @@ class KeybindSaver {
         }
         dispatch.hook('C_SAVE_CLIENT_ACCOUNT_SETTING', 'raw', cSaveClientSetting.bind(null, 'accountSettings'));
         dispatch.hook('C_SAVE_CLIENT_USER_SETTING', 'raw', cSaveClientSetting.bind(null, 'userSettings'));
-        
+
         function noMoreAccept() {
             acceptClient = false;
         }
@@ -95,7 +95,7 @@ class KeybindSaver {
             acceptClient = true;
         }
         dispatch.hook('C_LOAD_TOPO_FIN', 'raw', acceptNow);
-        
+
         dispatch.hook('S_LOGIN', 9, e=> {
             settingsPath = `./data/${e.name}-${e.serverId}.json`;
             acceptServer = 2;
