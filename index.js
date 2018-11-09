@@ -28,7 +28,7 @@ function getPacketInfo(payload) {
 
 class KeybindSaver {
     constructor(dispatch) {
-        const command = require('command')(dispatch);
+        const command = dispatch.command;
         let acceptServer = 0,
             acceptClient = false,
             settingsPath;
