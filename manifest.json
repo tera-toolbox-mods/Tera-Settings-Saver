@@ -1,7 +1,16 @@
 {
-    "files": {
-        "index.js": "1a1b2d754997501f439cfca2bf80924d8088d9d9dc4937d38b28801f5efdf98b",
-        "README.md": "d4b18e5f4b0ddf97422fb4b7b15a027efd1ceaba153316619fb3a45fb491efbd"
-    },
-    "defs": {}
+	"files": {
+		"README.md": "d4b18e5f4b0ddf97422fb4b7b15a027efd1ceaba153316619fb3a45fb491efbd",
+		"index.js": "a5e4e971a14ae5f3982ab6245bbaba53a211d9a5f874cd7cdc79f81c80718391",
+		"module.json": "f5b0a8659043360262582c0596295c99fc024402215b9ae9e28ac4255d264e4c"
+	},
+	"defs": {
+		"C_LOAD_TOPO_FIN": "raw",
+		"C_SAVE_CLIENT_ACCOUNT_SETTING": "raw",
+		"C_SAVE_CLIENT_USER_SETTING": "raw",
+		"S_LOAD_CLIENT_ACCOUNT_SETTING": "raw",
+		"S_LOAD_CLIENT_USER_SETTING": "raw",
+		"S_LOAD_TOPO": "raw",
+		"S_RETURN_TO_LOBBY": "raw"
+	}
 }
