@@ -97,7 +97,7 @@ class KeybindSaver {
         dispatch.hook('C_LOAD_TOPO_FIN', 'raw', acceptNow);
 
         dispatch.game.on('enter_game', () => {
-            settingsPath = `./data/${mod.game.me.name}-${mod.game.serverId}.json`;
+            settingsPath = `./data/${dispatch.game.me.name}-${dispatch.game.serverId}.json`;
             acceptServer = 2;
         });
     }
