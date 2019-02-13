@@ -96,8 +96,8 @@ class KeybindSaver {
         }
         dispatch.hook('C_LOAD_TOPO_FIN', 'raw', acceptNow);
 
-        dispatch.hook('S_LOGIN', 10, e=> {
-            settingsPath = `./data/${e.name}-${e.serverId}.json`;
+        dispatch.game.on('enter_game', () => {
+            settingsPath = `./data/${dispatch.game.me.name}-${dispatch.game.serverId}.json`;
             acceptServer = 2;
         });
     }
