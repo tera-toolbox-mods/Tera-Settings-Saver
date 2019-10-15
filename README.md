@@ -16,7 +16,8 @@ more clear example for those that need it, say for example you had a character n
 
 (note, make sure to actually look at the file name and not use the numbers used in this example since they will 100% be different)
 
-#### File name(s) can be found by going to [toolbox folder]/mods/Tera-Settings-Saver/data
+## File names can be found by going to `[toolbox folder]/mods/Tera-Settings-Saver/data`
+or by clicking `Show Mods Folder` in the toolbox ui and going to `/Tera-Settings-Saver/data` from there
 
 ### Bugs:
 Can potentially reset a glyph & item set page if the settings has been reset(it will print in the chat)
