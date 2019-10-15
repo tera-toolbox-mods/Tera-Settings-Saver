@@ -1,10 +1,11 @@
 {
-    "servers": ["https://raw.githubusercontent.com/Kaseaa/Tera-Settings-Saver/master/"],
-    "supportUrl": "https://github.com/Kaseaa/Tera-Settings-Saver/issues",
-    "author": "Kasea",
-    "name": "tera-settings-saver",
-    "options": {
-        "guiName": "Setting saver"
-    },
-    "description": "Saves your settings"
+	"disableAutoUpdate": false,
+	"servers": ["https://raw.githubusercontent.com/Kaseaa/Tera-Settings-Saver/master/"],
+	"supportUrl": "https://github.com/Kaseaa/Tera-Settings-Saver/issues",
+	"author": "Kasea",
+	"name": "tera-settings-saver",
+	"options": {
+		"guiName": "Setting saver"
+	},
+	"description": "Saves your settings"
 }

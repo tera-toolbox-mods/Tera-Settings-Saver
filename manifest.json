@@ -1,7 +1,8 @@
 {
 	"files": {
-		"README.md": "d4b18e5f4b0ddf97422fb4b7b15a027efd1ceaba153316619fb3a45fb491efbd",
-		"index.js": "e931e3d3ffed529c045d22d61d451cbee46946b4f2a7a0e92b1865141c2b3a6f"
+		"README.md": "a7f867a99061a5ffd8049ec6283e1f6d7492e757eee60772de5eb743e5fdbfa1",
+		"index.js": "e931e3d3ffed529c045d22d61d451cbee46946b4f2a7a0e92b1865141c2b3a6f",
+		"module.json": "f5b0a8659043360262582c0596295c99fc024402215b9ae9e28ac4255d264e4c"
 	},
 	"defs": {
 		"C_LOAD_TOPO_FIN": "raw",
